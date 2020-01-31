@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGODB_URL + process.env.DB_NAME, {    // db name is part of URL in mongoose
+mongoose.connect(process.env.MONGODB_URL, {    // db name is part of URL in mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
